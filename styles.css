@@ -48,7 +48,8 @@ html, body {
 
 /* Syllabus Section Styles */
 .syllabusSection {
-    height: 600px;
+    min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+    padding: 80px 0; /* Adjust the padding to account for the fixed navigation bar */
 }
 
 .syllabusHeader {
@@ -59,8 +60,8 @@ html, body {
 .syllabusCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     padding: 40px 0;
 }
 
