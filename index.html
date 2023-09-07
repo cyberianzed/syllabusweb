@@ -2,27 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Syllabusweb</title>
-    <link
-      rel="stylesheet"
-      href="styles.css"
-    />
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script>
+      // JavaScript code goes here
+      function openPopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "block";
+      }
+
+      function closePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        popup.style.display = "none";
+      }
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -38,164 +39,152 @@
 
       <!-- SYLLABUS SECTION -->
 
-      <div
-        id="syllabusSection"
-        class="syllabusSection"
-      >
+      <div id="syllabusSection" class="syllabusSection">
         <div class="syllabusHeader" data-aos="fade-up" data-aos-duration="1000">
-          <h1>
-            Syllabus for S7
-          </h1>
+          <h1>Syllabus for S7</h1>
         </div>
         <div class="syllabusCards">
-          <!-- Subject 1 -->
-          <div
-            class="subject-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <img
-              src="img/subject1.png"
-              class="subjectImg"
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="1100"
-            />
+          <!-- Subject -->
+          <div class="subject-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="subjectCardContent">
               <h2>Subject 1</h2>
-              <p>
-                This is the syllabus for Subject 1. You can list the topics and details here.
-              </p>
-              <a href="#">
+              <p>This is the syllabus for Subject 1.</p>
+              <a href="#" onclick="openPopup('popup-subject1')">
                 <div class="cardBtn">
                   <img src="img/next.png" alt="" class="cardIcon" />
                 </div>
               </a>
             </div>
           </div>
-          <!-- Subject 2 -->
-          <div
-            class="subject-card"
-            data-aos="fade-up"
-            data-aos-duration="1300"
-          >
-            <img
-              src="img/subject2.png"
-              class="subjectImg"
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            />
+
+          <div class="popup" id="popup-subject1">
+            <div class="popup-content">
+              <span class="close-popup" onclick="closePopup('popup-subject1')"
+                >&times;</span
+              >
+              <!-- syllabus content here -->
+              <h2>Subject 1 Syllabus</h2>
+              <p>This is the syllabus for Subject 1.</p>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="subject-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="subjectCardContent">
               <h2>Subject 2</h2>
-              <p>
-                This is the syllabus for Subject 2. You can list the topics and details here.
-              </p>
-              <a href="#">
+              <p>This is the syllabus for Subject 2.</p>
+              <a href="#" onclick="openPopup('popup-subject2')">
                 <div class="cardBtn">
                   <img src="img/next.png" alt="" class="cardIcon" />
                 </div>
               </a>
             </div>
           </div>
-          <!-- Subject 3 -->
-          <div
-            class="subject-card"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-          >
-            <img
-              src="img/subject3.png"
-              class="subjectImg"
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="1300"
-            />
+
+          <div class="popup" id="popup-subject2">
+            <div class="popup-content">
+              <span class="close-popup" onclick="closePopup('popup-subject2')"
+                >&times;</span
+              >
+              <!-- syllabus content here -->
+              <h2>Subject 2 Syllabus</h2>
+              <p>This is the syllabus for Subject 2.</p>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="subject-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="subjectCardContent">
               <h2>Subject 3</h2>
-              <p>
-                This is the syllabus for Subject 3. You can list the topics and details here.
-              </p>
-              <a href="#">
+              <p>This is the syllabus for Subject 3.</p>
+              <a href="#" onclick="openPopup('popup-subject3')">
                 <div class="cardBtn">
                   <img src="img/next.png" alt="" class="cardIcon" />
                 </div>
               </a>
             </div>
           </div>
-          <!-- Subject 4 -->
-          <div
-            class="subject-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <img
-              src="img/subject4.png"
-              class="subjectImg"
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="1100"
-            />
+
+          <div class="popup" id="popup-subject3">
+            <div class="popup-content">
+              <span class="close-popup" onclick="closePopup('popup-subject3')"
+                >&times;</span
+              >
+              <!-- syllabus content here -->
+              <h2>Subject 3 Syllabus</h2>
+              <p>This is the syllabus for Subject 3.</p>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="subject-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="subjectCardContent">
               <h2>Subject 4</h2>
-              <p>
-                This is the syllabus for Subject 4. You can list the topics and details here.
-              </p>
-              <a href="#">
+              <p>This is the syllabus for Subject 4.</p>
+              <a href="#" onclick="openPopup('popup-subject4')">
                 <div class="cardBtn">
                   <img src="img/next.png" alt="" class="cardIcon" />
                 </div>
               </a>
             </div>
           </div>
-          <!-- Subject 5 -->
-          <div
-            class="subject-card"
-            data-aos="fade-up"
-            data-aos-duration="1300"
-          >
-            <img
-              src="img/subject5.png"
-              class="subjectImg"
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            />
+
+          <div class="popup" id="popup-subject4">
+            <div class="popup-content">
+              <span class="close-popup" onclick="closePopup('popup-subject4')"
+                >&times;</span
+              >
+              <!-- syllabus content here -->
+              <h2>Subject 4 Syllabus</h2>
+              <p>This is the syllabus for Subject 4.</p>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="subject-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="subjectCardContent">
               <h2>Subject 5</h2>
-              <p>
-                This is the syllabus for Subject 5. You can list the topics and details here.
-              </p>
-              <a href="#">
+              <p>This is the syllabus for Subject 5.</p>
+              <a href="#" onclick="openPopup('popup-subject5')">
                 <div class="cardBtn">
                   <img src="img/next.png" alt="" class="cardIcon" />
                 </div>
               </a>
             </div>
           </div>
-          <!-- Subject 6 -->
-          <div
-            class="subject-card"
-            data-aos="fade-up"
-            data-aos-duration="1600"
-          >
-            <img
-              src="img/subject6.png"
-              class="subjectImg"
-              alt=""
-              data-aos="fade-up"
-              data-aos-duration="1300"
-            />
+
+          <div class="popup" id="popup-subject5">
+            <div class="popup-content">
+              <span class="close-popup" onclick="closePopup('popup-subject5')"
+                >&times;</span
+              >
+              <!-- syllabus content here -->
+              <h2>Subject 5 Syllabus</h2>
+              <p>This is the syllabus for Subject 5.</p>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="subject-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="subjectCardContent">
               <h2>Subject 6</h2>
-              <p>
-                This is the syllabus for Subject 6. You can list the topics and details here.
-              </p>
-              <a href="#">
+              <p>This is the syllabus for Subject 6.</p>
+              <a href="#" onclick="openPopup('popup-subject6')">
                 <div class="cardBtn">
                   <img src="img/next.png" alt="" class="cardIcon" />
                 </div>
               </a>
+            </div>
+          </div>
+
+          <div class="popup" id="popup-subject6">
+            <div class="popup-content">
+              <span class="close-popup" onclick="closePopup('popup-subject6')"
+                >&times;</span
+              >
+              <!-- syllabus content here -->
+              <h2>Subject 6 Syllabus</h2>
+              <p>This is the syllabus for Subject 6.</p>
             </div>
           </div>
         </div>
