@@ -1,0 +1,68 @@
+/* Existing CSS styles are retained */
+
+/* Add styles for syllabus section and cards */
+.syllabusSection {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.syllabusHeader {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.syllabusCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.subject-card {
+  position: relative;
+  height: 360px;
+  width: 350px;
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+  margin: 20px;
+}
+
+.subjectCardContent {
+  padding: 0 20px;
+}
+
+.subjectCardContent h2 {
+  font-weight: 600;
+}
+
+.subjectCardContent p {
+  line-height: 30px;
+  opacity: 0.6;
+}
+
+.subjectCardContent .cardBtn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px;
+  background-color: #ededed;
+  width: 25px;
+  height: 20px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.subjectCardContent .cardBtn:hover {
+  background-color: #2f8be0;
+}
+
+.subjectCardContent .cardBtn .cardIcon {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 16px;
+}
